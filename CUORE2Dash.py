@@ -91,7 +91,7 @@ app.layout = html.Div(
                         ),
                     
                     
-                    html.P(children = "(0 -> Female, 1 -> Male)",
+                    html.P(children = "Please select gender assigned at birth.",
                            className = "mt-0 m-3 fst-italic"
                         ),
                     
@@ -105,9 +105,7 @@ app.layout = html.Div(
                    html.P(children = "3. Chest Pain Type", className="fs-5 m-4 fw-bold ", style={'color':'#11577D'}
                        ),
                    
-                   html.P(children = "(1 -> Typical Angina, 2 -> Atypical Angina, 3 -> Non-Anginal, 4 -> Asymptomatic)", 
-                          className= " mt-0 m-3 fst-italic"
-                       ),
+                   
                    
                    dcc.Dropdown(options=[{'label': 'Typical Angina', 'value': 1},{'label': 'Atypical Angina', 'value': 2},
                                          {'label': 'Non-Anginal', 'value': 3},{'label': 'Asymptomatic', 'value': 4}],
@@ -157,9 +155,7 @@ app.layout = html.Div(
                    #RESTING ELECTROCARDIOGRAPHIC RESULT
                    html.P(children = "7. Resting Electrocardiographic Result", className="fs-5 m-4 fw-bold ", style={'color':'#11577D'}
                        ),
-                   html.P(children = "(0 -> normal, 1 -> St-T wave abnormality, 2 -> probable or definite hypertropy)",
-                          className = "mt-0 m-3 fst-italic"
-                       ),
+                   
                    
                    dcc.Dropdown(options=[{'label': 'Normal', 'value': 0},{'label': 'St-T wave abnormality', 'value': 1},
                                          {'label': 'Probable or definite hypertropy', 'value': 2}],
@@ -183,8 +179,7 @@ app.layout = html.Div(
                   #EXERCISE INDUCED ANGINA 
                   html.P(children = "9. Exercise Induced Angina", className="fs-5 m-4 fw-bold ", style={'color':'#11577D'}
                       ),
-                  html.P(children = "((1 = Yes, 0 = No)", className = "mt-0 m-3 fst-italic"
-                      ),
+                
                   
                   dcc.Dropdown(options=[{'label': 'No', 'value': 0},{'label': 'Yes', 'value': 1}],
                                 id='Exang', value = "", className = "mt-0 m-4 mb-4 ", style={'width':'50%'} ), 
@@ -207,8 +202,7 @@ app.layout = html.Div(
                   #SLOPE OF THE PEAK EXERCISE ST SEGMENT 
                   html.P(children = "11. Slope of the Peak Exercise ST Segment", className=" fs-5 m-4 fw-bold ", style={'color':'#11577D'}
                       ),
-                  html.P(children = "(1 -> Upslopping, 2 -> Flat, 3 -> Downslopping)", className= "mt-0 m-3 fst-italic"
-                      ),
+                  
                   
                   dcc.Dropdown(options=[{'label': 'Upslopping', 'value': 1},{'label': 'Flat', 'value': 2},
                                          {'label': 'Downslopping', 'value': 3}],
@@ -225,8 +219,7 @@ app.layout = html.Div(
                   #THALASSEMIA 
                   html.P(children = "13. Thalassemia", className=" fs-5 m-4 fw-bold ", style={'color':'#11577D'}
                       ),
-                  html.P(children = "(3 -> Normal, 6 -> Fixed Defect, 7 -> Reversible Defect)", className= "mt-0 m-3 fst-italic"
-                      ),
+                  
                   
                   dcc.Dropdown(options=[{'label': 'Normal', 'value': 3},{'label': 'Fixed Defect', 'value': 6},
                                          {'label': 'Reversible Defect', 'value': 7}], id ='Thal', value = "", className = "mt-0 m-4 mb-4 ", style={'width':'50%'}), 
@@ -321,10 +314,8 @@ def execute_classification(n_clicks, Age, Sex, ChestPain,Trestbps, Chol, Fbs, Re
 
         # Return final message
         prediction_labels = ["Healthy", "Not Healthy"]
-        return "The patient is: ["+ str(prediction[0]) +":" + prediction_labels[prediction[0]] + "]"
-
-
-
+        return "The patient is considered as:"+" "+ prediction_labels[prediction[0]]
+# In case we want to also show the class label we need to add "str(prediction[0] " in the return statement
 
 
 
