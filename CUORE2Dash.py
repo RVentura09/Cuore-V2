@@ -119,7 +119,7 @@ app.layout = html.Div(
                     
                     dcc.Input(
                                id="Trestbps".format("number"),
-                               type="number",
+                               type="number",min=0,
                                value = "",
                                className = "mt-0 m-4 mb-4 border",
                                style={'width':'23.5%'},
@@ -133,7 +133,7 @@ app.layout = html.Div(
                    
                    dcc.Input(
                               id="Chol".format("number"),
-                              type="number",
+                              type="number",min=0,
                               className = "mt-0 m-4 mb-4 border",
                               style={'width':'23.5%'},
                               value = "",
@@ -168,7 +168,7 @@ app.layout = html.Div(
                    
                    dcc.Input(
                               id="Thalach".format("number"),
-                              type="number",
+                              type="number",min=0,
                               value = "",
                               className = "mt-0 m-4 mb-4 border",
                               style={'width':'23.5%'},
@@ -191,7 +191,7 @@ app.layout = html.Div(
                   
                   dcc.Input(
                              id="Oldpeak".format("number"),
-                             type="number",
+                             type="number",min=0,
                              value = "",
                              className = "mt-0 m-4 mb-4 border",
                              style={'width':'23.5%'},
