@@ -38,7 +38,7 @@ with open(filename_to_load, "rb") as readFile:
 ALLOWED_TYPES = ("text", "number", "password", "email", "search", "tel", "url", "range", "hidden",)
 
 
-pil_image = Image.open("prueba2.png")
+pil_image = Image.open("header_image.png")
 
 app.layout = html.Div(
                 children = [
