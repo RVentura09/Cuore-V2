@@ -23,4 +23,4 @@ B) Creation of the model and data transformation:
 
 * Notice: In case of any errors, verify that you have installed all the required libraries listed in "Requirement.txt".
 
-* This project is a group collaboration between Tara de Groot, Rony Ventura, Eric Vincent Rivas, Silvia Dubon,Frank Aiwuyor Ogiemwonyi, Dwi Aji Kurnia Putra, and Laureanne van Dijk
+* This project is based from original Cuore project which is a group collaboration between Tara de Groot, Rony Ventura, Eric Vincent Rivas, Silvia Dubon,Frank Aiwuyor Ogiemwonyi, Dwi Aji Kurnia Putra, and Laureanne van Dijk
