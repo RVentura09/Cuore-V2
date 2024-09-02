@@ -19,6 +19,8 @@ B) Creation of the model and data transformation:
   2) Save the files in the same folder.
   3) Run the notebook. It should create three files: Cleveland_ModelData.csv, Cleveland_TransformedData.csv, and trained_model_cuore.pickle.
 
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
 * Cleveland_TransformedData.csv is only used to generate a Power BI report and has no impact on the model's performance.
 
 * Notice: In case of any errors, verify that you have installed all the required libraries listed in "Requirement.txt".
