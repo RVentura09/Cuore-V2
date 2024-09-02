@@ -18,7 +18,6 @@ B) Creation of the model and data transformation:
   1) Download the files processed.cleveland.csv and Project_Cuore2.ipynb.
   2) Save the files in the same folder.
   3) Run the notebook. It should create three files: Cleveland_ModelData.csv, Cleveland_TransformedData.csv, and trained_model_cuore.pickle.
-
 ____________________________________________________________________________________________________________________________________________________________________________________________________
 
 * Cleveland_TransformedData.csv is only used to generate a Power BI report and has no impact on the model's performance.
@@ -27,7 +26,7 @@ ________________________________________________________________________________
 
 * This project is based from original Cuore project which is a group collaboration between Tara de Groot, Rony Ventura, Eric Vincent Rivas, Silvia Dubon,Frank Aiwuyor Ogiemwonyi, Dwi Aji Kurnia Putra, and Laureanne van Dijk
 
-  ____________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________________
 Changelog
 
 - Project_Cuore2.ipynb
