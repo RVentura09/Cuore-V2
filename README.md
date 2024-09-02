@@ -26,3 +26,24 @@ ________________________________________________________________________________
 * Notice: In case of any errors, verify that you have installed all the required libraries listed in "Requirement.txt".
 
 * This project is based from original Cuore project which is a group collaboration between Tara de Groot, Rony Ventura, Eric Vincent Rivas, Silvia Dubon,Frank Aiwuyor Ogiemwonyi, Dwi Aji Kurnia Putra, and Laureanne van Dijk
+
+  ____________________________________________________________________________________________________________________________________________________________________________________________________
+Changelog
+
+- Project_Cuore2.ipynb
+  -   Added data transformation steps.
+  -   Save cleaned and transformed csv files.
+  -   Eliminated the feature selected dataframe due to low performance.
+  -   Included confusion matrix for the final model.
+  -   Minor code readability and comment updates.
+ 
+- CUORE2DASH.py
+  -   Improved readability.
+  -   Limited numerical values to only positive values.
+  -   Updated dropdown lists values to their proper value instead of a number.
+
+- Cuore Report.pbix
+  -   Created powerbi report.
+  -   Added mobile phone layout
+  -   Sync slicers in both pages
+    
